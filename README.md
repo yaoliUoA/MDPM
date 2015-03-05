@@ -2,7 +2,7 @@
 
 ### Introduction
 This is the source code package of the algorithm described in the paper [Mid-level Deep Pattern Mining](http://arxiv.org/abs/1411.6382) which
-has been accepted by [CVPR 2015](http://www.pamitc.org/cvpr15/). More details are provided on the [project page](https://cs.adelaide.edu.au/~yaoli/?page_id=234)
+has been accepted by [CVPR 2015](http://www.pamitc.org/cvpr15/). More details are provided on the [project page](https://cs.adelaide.edu.au/~yaoli/?page_id=234).
 This package has been tested using Matlab 2014a, Ubuntu 14.04. 
 
 ### Citing MDPM
