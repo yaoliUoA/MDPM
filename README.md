@@ -41,7 +41,7 @@ If you find MDPM useful in your research, please consider citing:
 
 ### Pre-computed models
  For MIT Indoor dataset, we have provided some pre-computed models
- 0. [Pre-trained element detectors](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/detectors.zip). After uncompressing the downloaded file,
+ 0. [Pre-trained element detectors](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/detector.zip). After uncompressing the downloaded file,
     copy the `.mat` files to `data/MIT67/detCom_lda_128_32_150` directory (create it by yourself), you should be able to run the `feaEncodingMultiscaleSPM_lda.m`
     from `encoding` to generate image features if cnn features have already been extracted.  
  0. [Pre-computed image features](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature-MDPM.zip).
