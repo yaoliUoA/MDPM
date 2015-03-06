@@ -6,13 +6,7 @@
 conf.pathToLiblinear = '~/Vision/lib/liblinear-1.94/'; 
 addpath(genpath(conf.pathToLiblinear));
 
-% path to Apriori algorithm for assoication rule mining
-% conf.pathToAprior = '~/Vision/lib/apriori'; 
-% addpath(genpath(conf.pathToAprior));
-
-
 % path to Caffe, change this based on your configuration
-%conf.pathToCaffe = '/home/h0/yaoli/Project/CNN/caffe-master'; 
 conf.pathToCaffe = '/home/yao/Project/CNN/caffe-master'; 
 % path to Caffe's ImageNet model, you need to download it first 
 conf.pathToModel = [conf.pathToCaffe,'/models/bvlc_reference_caffenet']; 
