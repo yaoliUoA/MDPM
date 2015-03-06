@@ -32,11 +32,12 @@ If you find MDPM useful in your research, please consider citing:
     local configuration. 
  0. Copy the executable file `aprior` from directory `apriori/apriori/src` and paste it under `mining` directory.    
  0. Copy the mex file `im2colstep` and paste it under `cnn` directory. 
-
-    
- 
+0. **Runing MDPM**
+ 0. Run the `demo.m`. It should be working properly if you have followed aforementioned instructions. 
+ 0. **Important:** It may takes some time get the final classification result, so it is suggested to run MDPM on a cluster 
+   where jobs can be run in parallel. The `*.sh` scripts are provided to submit jobs on a cluster. 
 
 ### Feedback
 
-If you have any questions or feedback, please contact yao.li01@adelaide.edu.au
+If you have any issues (question, feedback) or find bugs in the code, please contact yao.li01@adelaide.edu.au
 
