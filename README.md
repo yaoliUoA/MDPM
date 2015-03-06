@@ -20,8 +20,9 @@ If you find MDPM useful in your research, please consider citing:
 0. **Prerequisites** 
  0. [Caffe](http://caffe.berkeleyvision.org/): installing Caffe by following its [installation instructions](http://caffe.berkeleyvision.org/installation.html). 
     Do not forget to run `make matcaffe` to compile Caffe's Matlab interface. You also need to download Caffe's reference model. 
- 0. [Apriori algorithm]: we use [this implementation](http://www.borgelt.net/src/apriori.tar.gz). Click the link to download this package. You need 
-    to uncompress it and run `make' to compile it in the `apriori/apriori/src' directory.
+ 0. Apriori algorithm: we use [this implementation](http://www.borgelt.net/src/apriori.tar.gz). Click the link to download this package. You need 
+    to uncompress it and run `make` to compile it in the `apriori/apriori/src` directory. 
+    Detailed usage of this package can be found [here](http://www.borgelt.net/doc/apriori/apriori.html).
     
  
 
