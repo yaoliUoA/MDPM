@@ -26,9 +26,10 @@ If you find MDPM useful in your research, please consider citing:
     Detailed usage of this package can be found [here](http://www.borgelt.net/doc/apriori/apriori.html).
  0. [Liblinear](http://www.csie.ntu.edu.tw/~cjlin/liblinear/): download liblinear and compile it by following its instructions. 
  0. [KSVDS-Box v11](http://www.cs.technion.ac.il/~ronrubin/Software/ksvdsbox11.zip): we use the `im2colstep` function in this toolbox, 
-     so you need to download and compile it (`im2colstep` is found in `ksvdsbox11/private`)
-0. **Configure MDPM**
- 0. Download MDPM: `git clone https://github.com/yaoliUoA/MDPM`
+     so you need to download and compile it (`im2colstep` is found in `ksvdsbox11/private`).
+0. **Configuring MDPM**
+ 0. Download MDPM: `git clone https://github.com/yaoliUoA/MDPM`.
+ 0. Download MIT Indoor dataset from [here](http://web.mit.edu/torralba/www/indoor.html).
  0. Open `init.m` in the Matlab. Change values of sereval variables, including `conf.pathToLiblinear`, `conf.pathToCaffe`, `conf.dataset` and `conf.imgDir` based on your
     local configuration. 
  0. Copy the executable file `aprior` from directory `apriori/apriori/src` and paste it under `mining` directory.    
@@ -43,5 +44,5 @@ If you find MDPM useful in your research, please consider citing:
 
 ### Feedback
 
-If you have any issues (question, feedback) or find bugs in the code, please contact yao.li01@adelaide.edu.au
+If you have any issues (question, feedback) or find bugs in the code, please contact yao.li01@adelaide.edu.au.
 
