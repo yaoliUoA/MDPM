@@ -40,13 +40,13 @@ If you find MDPM useful in your research, please consider citing:
    where jobs can be run in parallel. The `*.sh` scripts are provided to submit jobs on a cluster. 
 
 ### Pre-computed models
- For MIT Indoor dataset, we have provided the  pre-computed models
+ For MIT Indoor dataset, we have provided some pre-computed models
  0. [Pre-trained element detectors](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/detectors.zip). After uncompressing the downloaded file,
     copy the `.mat` files to `data/MIT67/detCom_lda_128_32_150` directory (create it by yourself), you should be able to run the `feaEncodingMultiscaleSPM_lda.m`
-    under `encoding` directory to generate image features if cnn features have already been extracted.  
+    from `encoding` to generate image features if cnn features have already been extracted.  
  0. [Pre-computed image features](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature-MDPM.zip).
     After uncompressing the downloaded file,  copy the `.mat` files to `data/MIT67/feaFinal_128_32_150` directory (create it by yourself), you should be able to run `classify.m`
-    in the `classify` directory directly to reproduce the classification result in the paper.  
+    from `classify` directly to reproduce the classification result in the paper.  
 
 ### Feedback
 
