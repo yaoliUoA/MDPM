@@ -34,7 +34,7 @@ If you find MDPM useful in your research, please consider citing:
  0. Copy the mex file `im2colstep` and paste it under `cnn` directory. 
 0. **Runing MDPM**
  0. Run the `demo.m`. It should be working properly if you have followed aforementioned instructions. 
- 0. **Important:** It may takes some time get the final classification result, so it is suggested to run MDPM on a cluster 
+ 0. **Important:** It may takes some time to get the final classification result, so it is suggested to run MDPM on a cluster 
    where jobs can be run in parallel. The `*.sh` scripts are provided to submit jobs on a cluster. 
 
 ### Feedback
