@@ -3,7 +3,7 @@
 ### Introduction
 This is the source code package of the algorithm described in the paper [Mid-level Deep Pattern Mining](http://arxiv.org/abs/1411.6382) which
 has been accepted by [CVPR 2015](http://www.pamitc.org/cvpr15/). More details are provided on the [project page](https://cs.adelaide.edu.au/~yaoli/?page_id=234).
-This package has been tested using Matlab 2014a a 64-bit Linux machine. 
+This package has been tested using Matlab 2014a on a 64-bit Linux machine. 
 
 ### Citing MDPM
 
@@ -15,7 +15,15 @@ If you find MDPM useful in your research, please consider citing:
         booktitle = {Computer Vision and Pattern Recognition},
         year = {2015}
     }
-### 
+
+### Installing MDPM
+0. **Prerequisites** 
+ 0. [Caffe](http://caffe.berkeleyvision.org/): installing Caffe by following its [installation instructions](http://caffe.berkeleyvision.org/installation.html). 
+    Do not forget to run `make matcaffe` to compile Caffe's Matlab interface. You also need to download Caffe's reference model. 
+ 0. [Apriori algorithm]: we use [this implementation](http://www.borgelt.net/src/apriori.tar.gz). Click the link to download this package. You need 
+    to uncompress it and run `make' to compile it in the `apriori/apriori/src' directory.
+    
+ 
 
 ### Feedback
 
