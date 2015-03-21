@@ -57,5 +57,5 @@ for i = 1:num
     imageColor((r*(H+1)+1):((r+1)*(H+1))-1,(c*(W+1)+1):((c+1)*(W+1))-1,:) = imCropped{i};
  end
 figure,imshow(imageColor);
-title(sprintf('class %d:%s, cluster %d',classId,imdb.images.class(classId),clusterId));
+title(sprintf('class %d:%s, cluster %d',classId,imdb.classes{classId},clusterId));
 % save to disk

@@ -21,16 +21,17 @@ If you find MDPM useful in your research, please consider citing:
  0. [Caffe](http://caffe.berkeleyvision.org/): install Caffe by following its [installation instructions](http://caffe.berkeleyvision.org/installation.html). 
     Do not forget to run `make matcaffe` to compile Caffe's Matlab interface. You also need to download Caffe's reference model (run `download_model_binary.py models/bvlc_reference_caffenet` from `scripts`)
     and the ImageNet mean file (run `get_ilsvrc_aux.sh` from `data/ilsvrc12 `). 
+    Note: As we only use Caffe CNN as a feature extractor, installing Caffe using the CPU mode is OK. 
  0. [Apriori algorithm](http://en.wikipedia.org/wiki/Apriori_algorithm): we use [this implementation](http://www.borgelt.net/src/apriori.tar.gz). Click the link to download this package. You need 
-    to uncompress it and run `make` to compile it in the `apriori/apriori/src` directory. 
+    to uncompress it and run `make` to compile it in the `apriori/apriori/src`. 
     Detailed usage of this package can be found [here](http://www.borgelt.net/doc/apriori/apriori.html).
  0. [Liblinear](http://www.csie.ntu.edu.tw/~cjlin/liblinear/): download liblinear and compile it by following its instructions. 
- 0. [KSVDS-Box v11](http://www.cs.technion.ac.il/~ronrubin/Software/ksvdsbox11.zip): we use the `im2colstep` function in this toolbox, 
-     so you need to download and compile it (`im2colstep` is found in `ksvdsbox11/private`).
+ 0. [KSVDS-Box v11](http://www.cs.technion.ac.il/~ronrubin/Software/ksvdsbox11.zip): as we use the `im2colstep` function in this toolbox, 
+     you need to download and compile it (`im2colstep` is found in `ksvdsbox11/private`).
 0. **Configuring MDPM**
  0. Download MDPM: `git clone https://github.com/yaoliUoA/MDPM`.
  0. Download MIT Indoor dataset from [here](http://web.mit.edu/torralba/www/indoor.html).
- 0. Open `init.m` in the Matlab. Change values of sereval variables, including `conf.pathToLiblinear`, `conf.pathToCaffe`, `conf.dataset` and `conf.imgDir` based on your
+ 0. Open `init.m` in the Matlab. Change values of sereval variables based on your configuration, including `conf.pathToLiblinear`, `conf.pathToCaffe`, `conf.dataset` and `conf.imgDir` based on your
     local configuration. 
  0. Copy the executable file `aprior` under directory `apriori/apriori/src` and paste it under `mining` directory.    
  0. Copy the mex file `im2colstep` and paste it under `cnn` directory. 
