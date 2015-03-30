@@ -15,9 +15,8 @@ imIndex = find(imdb.images.class == classId);
 model_def_file = 'deploy1_fc6.prototxt';
 % NOTE: you'll have to get the pre-trained ILSVRC network
 model_file = [conf.pathToModel,'/bvlc_reference_caffenet.caffemodel'];
-caffe('init',model_def_file,model_file);
+caffe('init',model_def_file,model_file,'test');
 caffe('set_mode_cpu');
-caffe('set_phase_test');
 d = load('ilsvrc_2012_mean.mat');
 IMAGE_MEAN = d.image_mean;
 IMAGE_DIM = 256;
