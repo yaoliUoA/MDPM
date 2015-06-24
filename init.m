@@ -12,20 +12,23 @@ conf.pathToCaffe = '/home/yao/Project/CNN/caffe-master';
 
 %% path to Caffe CNN models (select one below, models are downloaded from Caffe Model Zoo)
 % (1) BVLC Reference CaffeNet model
+conf.modelName = 'CaffeRef';
 conf.pathToModel = [conf.pathToCaffe,'/models/bvlc_reference_caffenet']; 
 % (2) VGG 19-layer Very Deep model
+% conf.modelName = 'VGGVD';
 % conf.pathToModel = [conf.pathToCaffe,'/models/vgg-vd'];
-% path to Caffe's matlab interface, you need to compile it using "make matcaffe"
+
+%% path to Caffe's matlab interface, you need to compile it using "make matcaffe"
 conf.pathToMatCaffe = [conf.pathToCaffe,'/matlab/caffe']; 
 
 %% dataset 
 
 %(1)
-conf.dataset = 'MIT67';
-conf.imgDir   = ['~/Vision/dataset/',conf.dataset]; % path the dataset, change this based on your configuration
-conf.imdb     = 'MIT67-imdb.mat'; % train/test splits of the dataset. 
-conf.numClasses = 67 ;
-conf.numSamples = 100;
+% conf.dataset = 'MIT67';
+% conf.imgDir   = ['~/Vision/dataset/',conf.dataset]; % path the dataset, change this based on your configuration
+% conf.imdb     = 'MIT67-imdb.mat'; % train/test splits of the dataset. 
+% conf.numClasses = 67 ;
+% conf.numSamples = 100;
 
 %(2)
 conf.dataset = 'VOC2007';
@@ -80,8 +83,8 @@ conf.clusterDir_init = ['cluster_init_',num2str(conf.patchSize),'_',num2str(conf
 conf.clusterDir_merge = ['cluster_merge_',num2str(conf.patchSize),'_',num2str(conf.stepSize),'_',num2str(conf.detLDATh),'_',num2str(conf.numTopActivation),'_',num2str(conf.supp),'_',num2str(conf.confid)];
 conf.detDir_lda = ['detFinal_lda_',num2str(conf.patchSize),'_',num2str(conf.stepSize),'_',num2str(conf.detLDATh)];
 conf.detComDir_lda = ['detCom_lda_',num2str(conf.patchSize),'_',num2str(conf.stepSize),'_',num2str(conf.detLDATh)];
-
-
+conf.modelDir = 'model';
+conf.APDir = 'AP';
 % image representation directories
 conf.feaDir = ['feaFinal_',num2str(conf.patchSize),'_',num2str(conf.stepSize),'_',num2str(conf.detLDATh)];
 

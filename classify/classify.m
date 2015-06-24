@@ -4,10 +4,13 @@ init;
 dirName = 'classify/';
 conf.dataDir = strrep(conf.dataDir,dirName,'');
 imdb = load(fullfile(conf.dataDir, conf.imdb));
-
-load(fullfile(conf.dataDir,conf.feaDir,['feaTrainCombined_spmMulti_lda_',num2str(conf.numDetSelected),'.mat']));
-load(fullfile(conf.dataDir,conf.feaDir,['feaTestCombined_spmMulti_lda_',num2str(conf.numDetSelected),'.mat']));
-
+if strcmp(conf.modelName,'CaffeRef')
+    load(fullfile(conf.dataDir,conf.feaDir,['feaTrainCombined_spmMulti_lda_',num2str(conf.numDetSelected),'_CaffeRef.mat']));
+    load(fullfile(conf.dataDir,conf.feaDir,['feaTestCombined_spmMulti_lda_',num2str(conf.numDetSelected),'_CaffeRef.mat']));
+elseif strcmp(conf.modelName,'VGGVD')
+    load(fullfile(conf.dataDir,conf.feaDir,['feaTrainCombined_spmMulti_lda_',num2str(conf.numDetSelected),'_VGGVD.mat']));
+    load(fullfile(conf.dataDir,conf.feaDir,['feaTestCombined_spmMulti_lda_',num2str(conf.numDetSelected),'_VGGVD.mat']));
+end
 
 trainLabel = [];
 testLabel = [];
