@@ -1,8 +1,9 @@
 ## MDPM: *Mid-level Deep Pattern Mining*
 
 ### Introduction
-This is the source code package of the algorithm described in the paper [Mid-level Deep Pattern Mining](http://arxiv.org/abs/1411.6382) which
-has been accepted by [CVPR 2015](http://www.pamitc.org/cvpr15/). More details are provided on the [project page](https://cs.adelaide.edu.au/~yaoli/?page_id=234).
+This is the source code package of the algorithm described in our [CVPR 2015](http://www.pamitc.org/cvpr15/) paper 
+[Mid-level Deep Pattern Mining](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Li_Mid-Level_Deep_Pattern_2015_CVPR_paper.pdf) 
+and also a technical report [Mining Mid-level Visual Patterns with Deep CNN Activations](http://arxiv.org/abs/1506.06343). More details are provided on the [project page](https://cs.adelaide.edu.au/~yaoli/?page_id=234).
 This package has been tested using Matlab 2014a on a 64-bit Linux machine. This code is for research purposes only. 
 
 ### Citing MDPM
