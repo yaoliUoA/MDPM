@@ -20,9 +20,11 @@ If you find MDPM useful in your research, please consider citing:
 ### Installing MDPM
 0. **Prerequisites** 
  0. [Caffe](http://caffe.berkeleyvision.org/): install Caffe by following its [installation instructions](http://caffe.berkeleyvision.org/installation.html). 
-    Do not forget to run `make matcaffe` to compile Caffe's Matlab interface. You also need to download Caffe's reference model (run `download_model_binary.py models/bvlc_reference_caffenet` from `scripts`)
-    and the ImageNet mean file (run `get_ilsvrc_aux.sh` from `data/ilsvrc12 `). 
+    Do not forget to run `make matcaffe` to compile Caffe's Matlab interface. You also need to download the ImageNet mean file (run `get_ilsvrc_aux.sh` from `data/ilsvrc12 `).
     Note: As we only use Caffe CNN as a feature extractor, installing Caffe using the CPU mode is OK. 
+ 0. CNN models. We use consider two CNN models in the experiment. The first one is BVLC Reference CaffeNet (CaffeRef for short), 
+    this model can be downloaded by running `download_model_binary.py models/bvlc_reference_caffenet` from `scripts`.
+    The second is VGG 19-layer Very Deep model (VGGVD for short), which can be downloaded from [here](http://www.robots.ox.ac.uk/~vgg/research/very_deep/). 
  0. [Apriori algorithm](http://en.wikipedia.org/wiki/Apriori_algorithm): we use [this implementation](http://www.borgelt.net/src/apriori.tar.gz). Click the link to download this package. You need 
     to uncompress it and run `make` to compile it in the `apriori/apriori/src`. 
     Detailed usage of this package can be found [here](http://www.borgelt.net/doc/apriori/apriori.html).
