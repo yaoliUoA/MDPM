@@ -59,7 +59,7 @@ conf.patchSizeL2 = 160;
 conf.patchSizeL3 = 192;
 
 conf.supp = 0.01;
-conf.confid = 30;
+conf.confid = 30; %30 for MIT Indoor dataset, 80 (30) for VOC datasets if using CaffeRef (VGGVD) model
 
 %% other parameters
 conf.svmC = 0.5; % C value for training svm detector

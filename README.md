@@ -43,14 +43,22 @@ If you find MDPM useful in your research, please consider citing:
  0. **Important:** It may takes some time to get the final classification result, so it is suggested to run MDPM on a cluster 
    where jobs can be run in parallel. The `*.sh` scripts are provided to submit jobs on a cluster. 
 
-### Pre-computed models
- For MIT Indoor dataset, we have provided some pre-computed models
- 0. [Pre-trained element detectors](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/detector.zip). After uncompressing the downloaded file,
-    copy the `.mat` files to `data/MIT67/detCom_lda_128_32_150` directory (create it by yourself), you should be able to run the `feaEncodingMultiscaleSPM_lda.m`
-    from `encoding` to generate image features if cnn features have already been extracted.  
- 0. [Pre-computed image features](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature-MDPM.zip).
-    After uncompressing the downloaded file,  copy the `.mat` files to `data/MIT67/feaFinal_128_32_150` directory (create it by yourself), you should be able to run `classify.m`
-    from `classify` directly to reproduce the classification result in the paper.  
+### Pre-computed image features
+0. **MIT Indoor dataset**
+ 0. [feature_MITIndoor_CaffeRef](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature_MITIndoor_CaffeRef.zip) and 
+    [feature_MITIndoor_VGGVD](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature_MITIndoor_VGGVD.zip).
+    After uncompressing the downloaded file,  copy the `.mat` files to `data/MIT67/feaFinal_128_32_150` directory, you should be able to run `classify.m`
+    under `classify` to reproduce the classification result in the paper.  
+0. **PASCAL VOC 2007 dataset**
+ 0. [feature_VOC2007_CaffeRef](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature_VOC2007_CaffeRef.zip) and 
+    [feature_VOC2007_VGGVD](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature_VOC2007_VGGVD.zip).
+    After uncompressing the downloaded file,  copy the `.mat` files to `data/VOC2007/feaFinal_128_32_150` directory, you should be able to run `train_VOC.m`
+    and then `test_VOC.m` under `classify` to reproduce the classification result in the paper. 
+0. **PASCAL VOC 2012 dataset**
+ 0. [feature_VOC2012_CaffeRef](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature_VOC2012_CaffeRef.zip) and 
+    [feature_VOC2012_VGGVD](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature_VOC2012_VGGVD.zip).
+    After uncompressing the downloaded file,  copy the `.mat` files to `data/VOC2012/feaFinal_128_32_150` directory, you should be able to run `train_VOC.m`
+    and then `test_VOC_txt.m` under `classify`. The generated .txt files can be submitted to the [evaluation server](http://host.robots.ox.ac.uk:8080/accounts/login/?next=/eval/upload/). 
 
 ### Feedback
 
