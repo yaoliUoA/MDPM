@@ -59,8 +59,7 @@ You should able to reproduce our result presented in the CVPR 2015 paper and tec
     After uncompressing the downloaded file,  copy the `.mat` files to `data/VOC2007/feaFinal_128_32_150` directory (create by yourself), you should be able to run `train_VOC.m`
     and then `test_VOC.m` under `classify` to reproduce the mean average precision presented in the technical report. 
 0. **PASCAL VOC 2012 dataset**
- 0. [feature_VOC2012_CaffeRef](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature_VOC2012_CaffeRef.zip) and 
-    [feature_VOC2012_VGGVD](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature_VOC2012_VGGVD.zip).
+ 0. [feature_VOC2012_VGGVD](http://cs.adelaide.edu.au/~yaoli/wp-content/projects/MDPM/data/feature_VOC2012_VGGVD.zip).
     After uncompressing the downloaded file,  copy the `.mat` files to `data/VOC2012/feaFinal_128_32_150` directory (create by yourself), you should be able to run `train_VOC.m`
     and then `test_VOC_txt.m` under `classify`. The generated .txt files can be submitted to the [evaluation server](http://host.robots.ox.ac.uk:8080/accounts/login/?next=/eval/upload/). 
 
