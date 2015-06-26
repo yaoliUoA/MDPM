@@ -13,8 +13,9 @@ If you find MDPM useful in your research, please consider citing:
     @inproceedings{LiLSH15CVPR,
         author = {Yao Li and Lingqiao Liu and Chunhua Shen and Anton van den Hengel},
         title = {Mid-level Deep Pattern Mining},
-        booktitle = {Computer Vision and Pattern Recognition},
+        booktitle = {CVPR},
         year = {2015}
+        pages = {971-980},
     }
 
 ### Installing MDPM
@@ -38,7 +39,7 @@ If you find MDPM useful in your research, please consider citing:
     local configuration. 
  0. Copy the executable file `aprior` under directory `apriori/apriori/src` and paste it under `mining` directory.    
  0. Copy the mex file `im2colstep` and paste it under `cnn` directory. 
-0. **Runing MDPM**
+0. **Running MDPM**
  0. Run the `demo.m`. It should be working properly for MIT Indoor dataset if you have followed aforementioned instructions. Note 
     that the setting for PASCAL VOC datasets is slightly different due to the fact that images have multiple labels. 
  0. **Important:** It may takes some time to get the final classification result, so it is suggested to run MDPM on a cluster 
