@@ -12,15 +12,21 @@ if ~exist(fullfile(conf.dataDir,conf.cnnDir_Local_L3,num2str(classId)),'dir')
 end
 imdb = load(fullfile(conf.dataDir, conf.imdb));
 imIndex = find(imdb.images.class == classId);
-model_def_file = 'deploy1_fc6.prototxt';
-% NOTE: you'll have to get the pre-trained ILSVRC network
-model_file = [conf.pathToModel,'/bvlc_reference_caffenet.caffemodel'];
+if strcmp(conf.modelName,'CaffeRef')
+    model_def_file = 'deploy1_fc6.prototxt';
+    model_file = [conf.pathToModel,'/bvlc_reference_caffenet.caffemodel'];
+    CROPPED_DIM = 227;
+elseif strcmp(conf.modelName,'VGGVD')
+    model_def_file = 'deploy1_fc6_vgg.prototxt';
+    model_file = [conf.pathToModel,'/VGG_ILSVRC_19_layers.caffemodel'];
+    CROPPED_DIM = 224;
+end
 caffe('init',model_def_file,model_file,'test');
 caffe('set_mode_cpu');
 d = load('ilsvrc_2012_mean.mat');
 IMAGE_MEAN = d.image_mean;
 IMAGE_DIM = 256;
-CROPPED_DIM = 227;
+
  for i = 1:length(imIndex)
      fprintf('Image %d\n',i);
      imName = imdb.images.name{imIndex(i)};

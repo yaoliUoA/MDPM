@@ -24,19 +24,19 @@ conf.pathToMatCaffe = [conf.pathToCaffe,'/matlab/caffe'];
 %% dataset 
 
 %(1)
-% conf.dataset = 'MIT67';
-% conf.imgDir   = ['~/Vision/dataset/',conf.dataset]; % path the dataset, change this based on your configuration
-% conf.imdb     = 'MIT67-imdb.mat'; % train/test splits of the dataset. 
-% conf.numClasses = 67 ;
-% conf.numSamples = 100;
+conf.dataset = 'MIT67';
+conf.imgDir   = ['~/Vision/dataset/',conf.dataset]; % path the dataset, change this based on your configuration
+conf.imdb     = 'MIT67-imdb.mat'; % train/test splits of the dataset. 
+conf.numClasses = 67 ;
+conf.numSamples = 100;
 
 %(2)
-conf.dataset = 'VOC2007';
-conf.imgDir   = ['~/Vision/dataset/VOCdevkit/',conf.dataset,'/JPEGImages'];%path the dataset;
-conf.splitDir = ['~/Vision/dataset/VOCdevkit/',conf.dataset,'/ImageSets/Main'];
-conf.annoDir = ['~/Vision/dataset/VOCdevkit/',conf.dataset,'/Annotations/'];
-conf.imdb     = 'VOC2007-imdb.mat';% train/test splits of the dataset.
-conf.numClasses = 20;
+% conf.dataset = 'VOC2007';
+% conf.imgDir   = ['~/Vision/dataset/VOCdevkit/',conf.dataset,'/JPEGImages'];%path the dataset;
+% conf.splitDir = ['~/Vision/dataset/VOCdevkit/',conf.dataset,'/ImageSets/Main'];
+% conf.annoDir = ['~/Vision/dataset/VOCdevkit/',conf.dataset,'/Annotations/'];
+% conf.imdb     = 'VOC2007-imdb.mat';% train/test splits of the dataset.
+% conf.numClasses = 20;
 
 %(3)
 % conf.dataset = 'VOC2012';
