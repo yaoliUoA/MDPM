@@ -2,7 +2,7 @@
 % Yao Li, University of Adelaide, March 2015
 
 
-% This is a only a demo, you would be better run the whole program on a
+% This is a demo file for MIT Indoor dataset, it is suggested to run the whole program on a
 % cluster, the *.sh files are scripts for submitting jobs on a cluster
 
 if_visualize_initial_element = true;
@@ -16,6 +16,7 @@ addpath('encoding');
 addpath('classify');
 init;
 
+assert(strcmp(conf.dataset,'MIT67'),'This demo file is only for MIT Indoor dataset');
 
 %% Extracting cnn feature from image patches
 for i = 1:conf.numClasses

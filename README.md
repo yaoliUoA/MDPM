@@ -40,8 +40,8 @@ If you find MDPM useful in your research, please consider citing:
  0. Copy the executable file `aprior` under directory `apriori/apriori/src` and paste it under `mining` directory.    
  0. Copy the mex file `im2colstep` and paste it under `cnn` directory. 
 0. **Running MDPM**
- 0. Run the `demo.m`. It should be working properly for MIT Indoor dataset if you have followed aforementioned instructions. Note 
-    that the setting for PASCAL VOC datasets is slightly different due to the fact that images have multiple labels. 
+ 0. Run the `demo.m`. It should be working properly for MIT Indoor dataset if you have followed aforementioned instructions. Note that we have not
+  released a demo for PASCAL VOC datasets as the dataset setting for VOC datasets is different.
  0. **Important:** It may takes some time to get the final classification result, so it is suggested to run MDPM on a cluster 
    where jobs can be run in parallel. The `*.sh` scripts are provided to submit jobs on a cluster. 
 
