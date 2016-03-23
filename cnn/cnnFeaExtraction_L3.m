@@ -21,8 +21,10 @@ elseif strcmp(conf.modelName,'VGGVD')
     model_file = [conf.pathToModel,'/VGG_ILSVRC_19_layers.caffemodel'];
     CROPPED_DIM = 224;
 end
-caffe('init',model_def_file,model_file,'test');
-caffe('set_mode_cpu');
+%caffe('init',model_def_file,model_file,'test');
+%caffe('set_mode_cpu');
+caffe.set_mode_cpu();
+net = caffe.Net(model_def_file, model_file, 'test');
 d = load('ilsvrc_2012_mean.mat');
 IMAGE_MEAN = d.image_mean;
 IMAGE_DIM = 256;
@@ -53,7 +55,8 @@ IMAGE_DIM = 256;
         imCrop = imCrop(:,:,[3 2 1]) - IMAGE_MEAN;
         imCrop = imresize(imCrop, [CROPPED_DIM CROPPED_DIM], 'bilinear');
         images(:,:,:,j) = permute(imCrop,[2 1 3]);
-        score = caffe('forward', {images(:,:,:,j)});
+        %score = caffe('forward', {images(:,:,:,j)});
+        score = net.forward({images(:,:,:,j)});
         cnnFea(:,j) = score{1};
      end 
      save(fullfile(conf.dataDir,conf.cnnDir_Local_L3,num2str(classId),['cnnFea_',num2str(i),'.mat']),'cnnFea');

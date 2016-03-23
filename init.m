@@ -1,6 +1,6 @@
 %% Mid-level Deep Pattern Mining, CVPR 2015
 %% Mining Mid-level Visual Patterns with Deep CNN Activations, ArXiv preprint, 2015
-% Yao Li, University of Adelaide, March 2015
+% Yao Li, University of Adelaide, March 2016
 
 %% paths to some libraries
 % path to liblinear, change this based on your configuration
@@ -8,7 +8,7 @@ conf.pathToLiblinear = '~/Vision/lib/liblinear-1.94/';
 addpath(genpath(conf.pathToLiblinear));
 
 %% path to Caffe, change this based on your configuration
-conf.pathToCaffe = '/home/yao/Project/CNN/caffe-master'; 
+conf.pathToCaffe = '/home/yao/Project/CNN/caffe'; 
 
 %% path to Caffe CNN models (select one below, models are downloaded from Caffe Model Zoo)
 % (1) BVLC Reference CaffeNet model
@@ -19,7 +19,7 @@ conf.pathToModel = [conf.pathToCaffe,'/models/bvlc_reference_caffenet'];
 % conf.pathToModel = [conf.pathToCaffe,'/models/vgg-vd'];
 
 %% path to Caffe's matlab interface, you need to compile it using "make matcaffe"
-conf.pathToMatCaffe = [conf.pathToCaffe,'/matlab/caffe']; 
+conf.pathToMatCaffe = [conf.pathToCaffe,'/matlab/']; 
 
 %% dataset 
 
